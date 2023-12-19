@@ -1,0 +1,29 @@
+배열 뒤집기
+
+class Solution {
+    fun solution(num_list: IntArray): IntArray {
+        
+          
+        var answer: IntArray = num_list.reversed().toIntArray()
+        return answer
+    }
+}
+
+//reversed의 활용법, 배열 순서 reversed().toIntArray()
+
+-------------------------------------------------------
+
+양꼬치
+
+class Solution {
+    fun solution(n: Int, k: Int): Int {
+       
+        
+        var a = n / 10
+        var answer: Int = (n*12000) + (k*2000) - (2000*a)
+        return answer
+       
+           
+          }
+}
+// 전에 했던 코드들 총집합
