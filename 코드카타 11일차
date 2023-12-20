@@ -1,0 +1,13 @@
+class Solution {
+    fun solution(strlist: Array<String>): IntArray {
+        var answer = arrayListOf<Int>()
+        for(i in strlist){
+            answer.add(i.length)
+        }
+        
+        
+        return answer.toIntArray()
+    }
+}
+
+//length 활용, 반복문 복습
