@@ -1,0 +1,50 @@
+편지
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120898
+
+class Solution {
+    fun solution(message: String): Int {
+        var answer: Int = (message.length)*2
+        return answer
+    }
+}
+
+//.length 복습
+
+출력값
+
+테스트 1
+입력값 〉	"happy birthday!"
+기댓값 〉	30
+실행 결과 〉	테스트를 통과하였습니다.
+테스트 2
+입력값 〉	"I love you~"
+기댓값 〉	22
+실행 결과 〉	테스트를 통과하였습니다.
+
+----------------------------------------------------------------------------------------------------------------------
+
+특정문자 제거하기
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120826
+
+class Solution {
+    fun solution(my_string: String, letter: String): String {      
+        var answer: String = my_string.replace(letter, "")  
+         
+        return answer
+    }
+}
+
+// .replace 활용법, "" -> 앞의 문자를 공백으로 바꿔준다
+
+출력값 
+
+테스트 1
+입력값 〉	"abcdef", "f"
+기댓값 〉	"abcde"
+실행 결과 〉	테스트를 통과하였습니다.
+테스트 2
+입력값 〉	"BCBdbe", "B"
+기댓값 〉	"Cdbe"
+실행 결과 〉	테스트를 통과하였습니다.
