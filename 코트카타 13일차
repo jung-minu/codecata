@@ -1,0 +1,22 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120824
+
+짝수 홀수 개수 구하기
+
+class Solution {
+    fun solution(num_list: IntArray): IntArray {
+        var holsu = arrayListOf<Int>()
+        var zzaksu = arrayListOf<Int>()
+            for(i in num_list){
+                if(i % 2 == 0){
+                    zzaksu.add(i)
+                } else {
+                    holsu.add(i)
+                }
+            }
+        
+        var answer: IntArray = intArrayOf(zzaksu.size, holsu.size)
+        return answer
+    }
+}
+
+//arrayListof로 짝수 홀수를 나눈 후 for문을 통해 num_list를 반복시켜 if조건문으로 짝수와 홀수를 나눈다.
