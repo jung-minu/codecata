@@ -1,0 +1,22 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120822
+
+class Solution {
+    fun solution(my_string: String): String {
+        var answer: String = my_string.reversed()
+        return answer
+    }
+}
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120847
+
+class Solution {
+    fun solution(numbers: IntArray): Int {
+       var numberlist = numbers.sorted()
+        var a = numberlist.last()
+        var b = numberlist[numberlist.size-2]
+        var answer: Int = a * b
+        
+        
+        return answer
+    }
+}
