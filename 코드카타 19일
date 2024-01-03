@@ -1,0 +1,26 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120908
+
+class Solution {
+    fun solution(str1: String, str2: String): Int {
+        var answer: Int = 0
+        answer += if(str1.contains(str2)){
+            1
+        } else {
+            2
+        }
+        return answer
+    }
+}
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120819
+
+class Solution {
+    fun solution(money: Int): IntArray {
+        var a: Int = money / 5500
+        var b: Int = money - (5500*a)
+        
+        
+        var answer: IntArray = intArrayOf(a, b)
+        return answer
+    }
+}
