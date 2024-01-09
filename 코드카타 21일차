@@ -1,0 +1,27 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/120816
+
+class Solution {
+    fun solution(slice: Int, n: Int): Int {
+        var answer: Int = 0
+        var a: Int = n/slice
+        
+        if(n%slice == 0){
+             answer = a
+        } else if(n%slice > 0){
+            answer = a + 1
+        } 
+        
+       return answer
+    }
+}
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120811
+
+class Solution {
+    fun solution(array: IntArray): Int {
+           var answer: Int = array.sorted()[array.size /2]
+        return answer
+    }
+}
+
+//리스트 정렬 방법
